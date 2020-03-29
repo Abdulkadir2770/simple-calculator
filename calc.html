@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: lightgray;
+            width: 500px;
+            padding-top: 15px;
+            text-align: center;
+        }
+
+       .operand {
+            width: 200px;
+            padding: 4px;
+        }
+
+        .results {
+            margin-top: 20px;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        button {
+            width: 50%;
+            margin-top: 10px;
+            margin-left: 18%;
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <!--First operand-->
+        <input type="text" class="operand" id="operand1" placeholder="First Input">
+
+        <!--Operation section-->
+        <select id="operator">
+            <option value="add" id="add">+</option>
+            <option value="sub" id="sub">-</option>
+            <option value="mul" id="mul">*</option>
+            <option value="div" id="div">/</option>
+        </select>
+
+        <!--Second operand-->
+        <input type="text" class="operand" id="operand2" placeholder="Second Input">
+
+        <button type="submit" id="button">Submit</button>
+
+        <div class="results" id="results"></div>
+
+    </div>
+
+
+    <script src="calc.js"></script>
+
+</body>
+</html>
